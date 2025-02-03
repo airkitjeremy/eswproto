@@ -39,8 +39,13 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     # - run: npm test
+    - name: Upload distribution artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: github-pages
+        path: dist
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v4 # or specific "vX.X.X" version tag for this action
-      with:
-        path: dist
+      # with:
+      #   path: dist
