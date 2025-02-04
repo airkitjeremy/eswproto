@@ -21,7 +21,9 @@ export default function ChatApp() {
         } catch (err) {
             console.error("Error loading Embedded Messaging: ", err);
         }
-
+    }, [isBootstrapAvailable]);
+    
+    useEffect(() => {
         const scriptTag = document.createElement("script");
         scriptTag.setAttribute("type", "text/javascript");
         scriptTag.setAttribute(
@@ -29,7 +31,7 @@ export default function ChatApp() {
             "https://dxx0000006gpreae.my.localhost.sfdcdev.site.com:6101/ESWESWDeployment1738263045994/assets/js/bootstrap.min.js"
         );
         document.head.appendChild(scriptTag);
-    }, [isBootstrapAvailable]);
+    }, []);
 
     return <></>;
 }
