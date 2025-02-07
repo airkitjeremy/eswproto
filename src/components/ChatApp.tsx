@@ -12,7 +12,7 @@ export default function ChatApp() {
             window.embeddedservice_bootstrap.init(
                 "00DSG00000LMo8X", // Test env org ID
                 "MIAW", // Test env deployment name
-                "https://dxx0000006gpreae.my.localhost.sfdcdev.site.com:6101/ESWESWDeployment1738263045994", // Local site URL
+                "https://dxx0000006gpleau.my.localhost.sfdcdev.site.com:6101/ESWMIAW1726260437846", // Local site URL
                 {
                     scrt2URL:
                         "https://jeremyklukanesw.demo.test1.my.pc-rnd.salesforce-scrt.com", // Test env SCRT URL
@@ -28,7 +28,7 @@ export default function ChatApp() {
         scriptTag.setAttribute("type", "text/javascript");
         scriptTag.setAttribute(
             "src",
-            "https://dxx0000006gpreae.my.localhost.sfdcdev.site.com:6101/ESWESWDeployment1738263045994/assets/js/bootstrap.min.js"
+            "https://dxx0000006gpleau.my.localhost.sfdcdev.site.com:6101/ESWMIAW1726260437846/assets/js/bootstrap.min.js"
         );
         document.head.appendChild(scriptTag);
     }, []);
